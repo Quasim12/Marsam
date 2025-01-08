@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text To Image Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Marsam</h1>
+
+    <div class="input">
+      <label for="textPrompt">Create an Image from Text Prompt:</label>
+      <input type="text" id="textPrompt" placeholder="Enter your prompt here" />
+      <button id="btn">
+        Generate Image <img src="gen.svg" alt="" class="imgsvg" />
+      </button>
+    </div>
+
+    <div class="output">
+      <div class="image">
+        <img id="image" src="" alt="" />
+        <img id="svg" src="image.svg" alt="" />
+        <img id="loading" src="loading.webp" alt="" />
+      </div>
+    </div>
+
+    <div class="btns">
+      <button id="download">
+        Download <img src="down.svg" alt="" class="imgsvg" />
+      </button>
+      <button id="reset">
+        Reset <img src="reset.svg" alt="" class="imgsvg" />
+      </button>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
